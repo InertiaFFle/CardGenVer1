@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<img id = "bimg" src="https://media.discordapp.net/attachments/911979423316717598/912231099965509672/black_default.png"
+style="display: none;"
+crossorigin="anonymous"></img>
+
+<img id = "wtm" src="https://media.discordapp.net/attachments/911979423316717598/914438481374220318/wtm5.png"
+style="display: none;"
+crossorigin="anonymous"></img>
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bruh</title>
+    <meta name="keywords" content="xD">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="script.js"></script>
+  </head>
+  <body onload="drawTemplate()">
+    <h2> Cardsakjdfalsjbasldkcadfhsd </h2>
+    <p> change your browser if things arent working properly </p>
+
+
+<div class="inputs">
+  Name:
+  <input id="name" placeholder="-" type="text" maxlength="20"><br>
+  Squadron Name:
+  <input id="squad" placeholder="-" type="text" maxlength="20"><br>
+  Timezone:
+  <select id="timezone">
+	<option value="-12:00">UTC -12:00</option>
+  <option value="-11:00">UTC -11:00</option>
+  <option value="-10:00">UTC -10:00</option>
+  <option value="-09:00">UTC -09:00</option>
+	<option value="-08:00">UTC -08:00</option>
+  <option value="-07:00">UTC -07:00</option>
+  <option value="-06:00">UTC -06:00</option>
+  <option value="-05:00">UTC -05:00</option>
+	<option value="-04:00">UTC -04:00</option>
+   <option value="-03:30">UTC -03:30</option>
+  <option value="-03:00">UTC -03:00</option>
+  <option value="-02:00">UTC -02:00</option>
+  <option value="-01:00">UTC -01:00</option>
+  <option value="+00:00">UTC +00:00</option>
+	<option value="+01:00">UTC +01:00</option>
+  <option value="+02:00">UTC +02:00</option>
+  <option value="+03:00">UTC +03:00</option>
+   <option value="+03:30">UTC +03:30</option>
+  <option value="+04:00">UTC +04:00</option>
+	<option value="+05:00">UTC +05:00</option>
+   <option value="+05:30">UTC +05:30</option>
+  <option value="+06:00">UTC +06:00</option>
+  <option value="+07:00">UTC +07:00</option>
+  <option value="+08:00">UTC +08:00</option>
+	<option value="+09:00">UTC +09:00</option>
+   <option value="+09:30">UTC +09:30</option>
+  <option value="+10:00">UTC +10:00</option>
+  <option value="+11:00">UTC +11:00</option>
+  <option value="+12:00">UTC +12:00</option>
+<!-- i think i did the long way hmmmm -->
+</select><br>
+  Signed:
+  <input id="signed" type="text" readonly><br>
+<script>
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("signed").value = m + "/" + d + "/" + y;
+</script>  
+  ID Color Hex: #
+  <input id="idcolor" type="text" value="ffffff" maxlength="6"><br>
+</div>
+
+<div class="button">
+  <button onclick="generateId()">Generate</button>
+  <button onclick="clearId()">Clear</button>
+  <button onclick="downloadImage()">Download</button>
+</div>
+
+<div class="wholecanvas">
+  <canvas id="canvas" width="600" height="300" style="border:2px solid #000000;">
+Your browser does not support the HTML canvas tag lol</canvas>
+</div>
+
+<div class="IDK">
+   <h6> this took me 7 days to make from scratch ( i literally don't know how to code)
+  </h6>
+     <h6>if you have any suggestions, feel free to shut cuz im no longer updating this one
+   </h6>
+  <h6> prove to me that you're better than me</h6>
+   <h6> Update: added hex code
+   </h6>
+   <a href="https://replit.com/@waffleZz/sqzidver1?v=1">source code i think</a>
+
+</div>
+  </body>
+</html>
